@@ -1,9 +1,9 @@
 # RunGroop Web App - ASP.NET Core MVC
 
-![Main Page](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/public/assets/GitImages/MainPage.png)
-![ProductListWithFilter](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/public/assets/GitImages/ProductListWithFilter.png)
-![ProductDetails](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/public/assets/GitImages/ProductDetails.png)
-![Register](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/public/assets/GitImages/Register.png)
+![DashBoard](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/wwwroot/Images/GitImages/DashBoard.png)
+![Club Page](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/wwwroot/Images/GitImages/ClubPage.png)
+![Create Page Race](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/wwwroot/Images/GitImages/RaceCreatPage.png)
+![Register Page](https://github.com/kareemosama/RunGroopWebApp_ASPDotNetCoreMVC/blob/main/wwwroot/Images/GitImages/RegisterPage.png)
 
 ## Table of Contents
 
