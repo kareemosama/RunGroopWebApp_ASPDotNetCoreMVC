@@ -1,0 +1,79 @@
+﻿@using RunGroopWebApp.ViewModels
+@model List<UserViewModel>
+
+@*<section class="flush-with-above">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover align-items-center table-borderless">
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr class="bg-white">
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <img alt="Image profile avatar" src="@user.ProfileImageUrl" class="avatar">
+                                        <div class="media-body">
+                                            <span class="h6 mb-0">@user.UserName</span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <a class="btn btn-outline-primary" asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">
+                                        View Profile
+                                    </a>
+                                </td>
+
+                                @{
+                                    var mileage = user.Mileage == null ? "?" : user.Mileage.ToString();
+                                    var pace = user.Pace == null ? "?" : user.Mileage.ToString();
+                                }
+                                <td>@mileage mile at @pace mph</td>
+                                <td><i class="icon-location"></i> @user.Location</td>
+                            </tr>
+                            <tr class="table-divider">
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!--end of col-->
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>*@
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            @foreach(var item in Model)
+            {
+              <div class="col-md-4">
+                <div class="crad mb-4 box-shadow">
+                   <div class="card-body">
+                    <p class="card-text">@item.UserName</p>
+                    <p class="card-text">@item.Mileage</p>
+                    <p class="card-text">@item.Pace</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                      <a type="btn btn-success" asp-controller="User" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+
+                       @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                       {
+                            <a  asp-controller="Club" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            <a asp-controller="Club" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>
+                       }
+
+                     </div>
+                     </div>
+                    </div>
+                </div>
+              </div>       
+            }
+        </div>
+    </div>
+</div>

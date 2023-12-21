@@ -1,0 +1,19 @@
+﻿This comand is for Migrations for the first time Migration 
+
+{<<  Add-Migration InitialCreate >>}
+
+and the after migration i have to update data base
+
+{<<  Update-Database >>}
+
+after adding/installing identity framework i had to type thos comand
+
+{<<  Add-Migration Identity >>}
+
+then i have to update the database  for every change in data bas i had to type this comand
+
+{<<  Update-Database >>}
+
+to seed data
+
+{<< dotnet run seeddata >>}
