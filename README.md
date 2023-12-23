@@ -13,7 +13,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [References](#References)
+- [Reference](#References)
 
 ## About
 
@@ -83,7 +83,7 @@ Follow these steps to set up and run RunGroop Web App locally:
    dotnet run
    ```
 
-# Refrence
+# Reference
 
 - [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0):Official documentation for ASP.NET Core.
 - [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/):Official documentation for Entity Framework Core.
