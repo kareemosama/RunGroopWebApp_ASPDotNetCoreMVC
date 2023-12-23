@@ -13,7 +13,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Reference](#References)
+- [Reference](#Reference)
 
 ## About
 
